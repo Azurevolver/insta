@@ -22,6 +22,8 @@ struct LoginSignupView: View {
     @State private var requestError = false
     @State private var requestErrorText: String = ""
     @State var networkOperation: AnyCancellable?
+    let SIGN_UP = "Sign Up"
+    let SIGN_IN = "Sign In"
     
     var body: some View {
         VStack(spacing: 55) {
@@ -69,7 +71,7 @@ struct LoginSignupView: View {
               }) {
                 HStack {
                   Spacer()
-                  Text(authState == .signUp ? "Sign Up" : "Sign In")
+                  Text(authState == .signUp ? SIGN_UP : SIGN_IN)
                     .foregroundColor(.white)
                   Spacer()
                 }
@@ -86,7 +88,7 @@ struct LoginSignupView: View {
               }) {
                 HStack {
                   Spacer()
-                  Text(authState == .signUp ? "Sign In" : "Sign Up")
+                  Text(authState == .signUp ? SIGN_IN : SIGN_UP)
                   Spacer()
                 }
               }
