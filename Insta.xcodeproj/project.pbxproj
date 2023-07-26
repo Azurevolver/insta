@@ -22,6 +22,12 @@
 		D0525D132A62975F0039403C /* APIEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0525D122A62975F0039403C /* APIEnvironment.swift */; };
 		D0525D1A2A62EF1B0039403C /* PostRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0525D192A62EF1B0039403C /* PostRequestTest.swift */; };
 		D0525D1C2A62EFA70039403C /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0525D1B2A62EFA70039403C /* JsonData.swift */; };
+		D0BC73AD2A652C6700E3E2E0 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC73AC2A652C6700E3E2E0 /* UserAuthentication.swift */; };
+		D0BC73AF2A652C8000E3E2E0 /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC73AE2A652C8000E3E2E0 /* UserRequests.swift */; };
+		D0BC73B12A652E2E00E3E2E0 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC73B02A652E2E00E3E2E0 /* LoginSignupView.swift */; };
+		D0BC73B32A6BC35500E3E2E0 /* CoolStoryregular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0BC73B22A6BC35500E3E2E0 /* CoolStoryregular.ttf */; };
+		D0BC73B82A6BC41500E3E2E0 /* AppTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC73B72A6BC41500E3E2E0 /* AppTitle.swift */; };
+		D0BC73BA2A6BC8B700E3E2E0 /* Color+MyInsta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BC73B92A6BC8B700E3E2E0 /* Color+MyInsta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,12 @@
 		D0525D122A62975F0039403C /* APIEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnvironment.swift; sourceTree = "<group>"; };
 		D0525D192A62EF1B0039403C /* PostRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTest.swift; sourceTree = "<group>"; };
 		D0525D1B2A62EFA70039403C /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
+		D0BC73AC2A652C6700E3E2E0 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		D0BC73AE2A652C8000E3E2E0 /* UserRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
+		D0BC73B02A652E2E00E3E2E0 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
+		D0BC73B22A6BC35500E3E2E0 /* CoolStoryregular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolStoryregular.ttf; sourceTree = "<group>"; };
+		D0BC73B72A6BC41500E3E2E0 /* AppTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTitle.swift; sourceTree = "<group>"; };
+		D0BC73B92A6BC8B700E3E2E0 /* Color+MyInsta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+MyInsta.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +171,10 @@
 		D0525D142A62EE460039403C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D0BC73B42A6BC3D600E3E2E0 /* Helpers */,
 				D0525CE22A628CBD0039403C /* ContentView.swift */,
+				D0BC73B02A652E2E00E3E2E0 /* LoginSignupView.swift */,
+				D0BC73B22A6BC35500E3E2E0 /* CoolStoryregular.ttf */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -168,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				D0525D0A2A628CE90039403C /* Post.swift */,
+				D0BC73AC2A652C6700E3E2E0 /* UserAuthentication.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,8 +212,18 @@
 			isa = PBXGroup;
 			children = (
 				D0525D0E2A6295AE0039403C /* PostRequest.swift */,
+				D0BC73AE2A652C8000E3E2E0 /* UserRequests.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		D0BC73B42A6BC3D600E3E2E0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D0BC73B72A6BC41500E3E2E0 /* AppTitle.swift */,
+				D0BC73B92A6BC8B700E3E2E0 /* Color+MyInsta.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BC73B32A6BC35500E3E2E0 /* CoolStoryregular.ttf in Resources */,
 				D0525CE82A628CBD0039403C /* Preview Assets.xcassets in Resources */,
 				D0525CE52A628CBD0039403C /* Assets.xcassets in Resources */,
 			);
@@ -338,9 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0525D0B2A628CE90039403C /* Post.swift in Sources */,
+				D0BC73AF2A652C8000E3E2E0 /* UserRequests.swift in Sources */,
 				D0525CE32A628CBD0039403C /* ContentView.swift in Sources */,
+				D0BC73B82A6BC41500E3E2E0 /* AppTitle.swift in Sources */,
+				D0BC73AD2A652C6700E3E2E0 /* UserAuthentication.swift in Sources */,
+				D0BC73BA2A6BC8B700E3E2E0 /* Color+MyInsta.swift in Sources */,
 				D0525D132A62975F0039403C /* APIEnvironment.swift in Sources */,
 				D0525D0F2A6295AE0039403C /* PostRequest.swift in Sources */,
+				D0BC73B12A652E2E00E3E2E0 /* LoginSignupView.swift in Sources */,
 				D0525D0D2A6291480039403C /* APIRequest.swift in Sources */,
 				D0525CE12A628CBD0039403C /* InstaApp.swift in Sources */,
 				D0525D112A6296400039403C /* APIClient.swift in Sources */,
