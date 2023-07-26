@@ -1,1 +1,3 @@
-xcodebuild -scheme Insta -configuration Debug build test -destination 'platform=iOS Simulator,name=iPhone 12'
+#!/bin/bash
+set -e
+xcodebuild -project 'Insta.xcodeproj' -scheme 'Insta' -destination 'platform=iOS Simulator,name=iPhone 12' test
